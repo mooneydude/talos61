@@ -1,0 +1,15 @@
+## Do not edit between this and DO NOT REMOVE
+creation_rules:
+  - path_regex: ^clusters.*kubernetes.*values.ya?ml$
+    age: age1c8f2w7vn06fj2chqaq274g66mg9z9sf9s4l33wmf7m99g5w2nafqlunj9f
+    encrypted_regex: "((?i)(displayname|email|pass|ca|id|bootstraptoken|secretboxencryptionsecret|secrets|secrets|password|cert|secret($|[^N])|key|token|^data$|^stringData))"
+  - path_regex: ^clusters.*kubernetes.*\.secret.ya?ml
+    age: age1c8f2w7vn06fj2chqaq274g66mg9z9sf9s4l33wmf7m99g5w2nafqlunj9f
+    encrypted_regex: "((?i)(displayname|email|pass|ca|id|bootstraptoken|secretboxencryptionsecret|secrets|secrets|password|cert|secret($|[^N])|key|token|^data$|^stringData))"
+  - path_regex: talenv.yaml
+    age: age1c8f2w7vn06fj2chqaq274g66mg9z9sf9s4l33wmf7m99g5w2nafqlunj9f
+  - path_regex: clusterenv.yaml
+    age: age1c8f2w7vn06fj2chqaq274g66mg9z9sf9s4l33wmf7m99g5w2nafqlunj9f
+  - path_regex: talsecret.yaml
+    age: age1c8f2w7vn06fj2chqaq274g66mg9z9sf9s4l33wmf7m99g5w2nafqlunj9f
+## DO NOT REMOVE: Personal setting go under this line
