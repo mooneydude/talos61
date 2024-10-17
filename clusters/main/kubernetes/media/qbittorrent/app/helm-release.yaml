@@ -60,18 +60,9 @@ spec:
               - path: /
                 pathType: Prefix
     persistence:
-      # config:
-      #   volsync:
-      #     - name: b2
-      #       type: restic
-      #       credentials: s3
-      #       dest:
-      #         enabled: true
-      #         cacheCapacity: 10Gi
-      #       src:
-      #         enabled: true
-      #         cacheCapacity: 10Gi
-      downloads:
+      media:
         enabled: true
-        existingClaim: downloads-nfs-pvc
-        mountPath: "/plex"
+        type: nfs
+        path: /mnt/bigdata/plex
+        mountPath: /plex
+        server: 192.168.68.109
