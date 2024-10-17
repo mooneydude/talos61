@@ -44,8 +44,8 @@ spec:
       main:
         enabled: true
         integrations:
-          traefik:
-            enabled: true
+          # traefik:
+          #   enabled: true
             # middlewares:
             #   - name: local
             #     namespace: traefik
@@ -53,7 +53,7 @@ spec:
               #   namespace: traefik
           certManager:
             enabled: true
-            certificateIssuer: mb-wildcard
+            certificateIssuer: cloudflare
         hosts:
           - host: torrent.${BASE_DOMAIN}
             paths:
@@ -63,6 +63,6 @@ spec:
       media:
         enabled: true
         type: nfs
-        path: /mnt/bigdata/plex # Big Data 22
+        path: /mnt/bigdata/plex
         mountPath: /plex
         server: 192.168.68.109
