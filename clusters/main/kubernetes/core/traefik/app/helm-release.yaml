@@ -46,7 +46,7 @@ spec:
         type: ClusterIP
       tcp:
         loadBalancerIP: ${TRAEFIK_IP}
-        externalTrafficPolicy: Cluster
+        externalTrafficPolicy: Local
         ports:
           web:
             enabled: true
@@ -80,7 +80,7 @@ spec:
         tls:
           - hosts:
               - traefik.${BASE_DOMAIN}
-            clusterIssuer: cloudflare
+            clusterIssuer: cluster-cert
         hosts:
           - host: traefik.${BASE_DOMAIN}
             paths:
