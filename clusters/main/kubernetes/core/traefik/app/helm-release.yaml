@@ -46,7 +46,7 @@ spec:
         type: ClusterIP
       tcp:
         loadBalancerIP: ${TRAEFIK_IP}
-        externalTrafficPolicy: Local
+        externalTrafficPolicy: Cluster
         ports:
           web:
             enabled: true
