@@ -63,6 +63,6 @@ spec:
       media:
         enabled: true
         type: nfs
-        path: /mnt/bigdata/plex # Big Data
+        path: /mnt/bigdata/plex # Big Data 22
         mountPath: /plex
         server: 192.168.68.109
