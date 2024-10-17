@@ -63,6 +63,6 @@ spec:
       media:
         enabled: true
         type: nfs
-        path: /mnt/bigdata/plex
-        mountPath: /plex
+        path: /mnt/data1/mailcow-gclife
+        mountPath: /mailcow-gclife
         server: 192.168.68.109
