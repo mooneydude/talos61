@@ -50,9 +50,10 @@ spec:
       replicationNamespaces: '.*'
       # replicationNamespaces: 'ix-.*'
       certificates:
-        - name: cluster-cert
+        - name: mb-wildcard
           enabled: true
           certificateIssuer: cert
           hosts:
             # - test.kqmav.com
+            - mooneybin.net
             - '*.mooneybin.net'

@@ -40,7 +40,7 @@ spec:
         format: common
       access:
         enabled: true
-    defaultCertificate: cluster-cert
+    defaultCertificate: mb-wildcard
     service:
       main:
         type: ClusterIP
@@ -80,7 +80,7 @@ spec:
         tls:
           - hosts:
               - traefik.${BASE_DOMAIN}
-            clusterIssuer: cluster-cert
+            clusterIssuer: mb-wildcard
         hosts:
           - host: traefik.${BASE_DOMAIN}
             paths:
