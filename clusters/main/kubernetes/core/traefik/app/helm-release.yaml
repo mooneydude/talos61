@@ -28,9 +28,15 @@ spec:
     keepHistory: false
   values:
 
-    global:
-      stopAll: false    
-
+    logs:
+      general:
+        # By default, the level is set to ERROR. Alternative logging levels are DEBUG, PANIC, FATAL, ERROR, WARN, and INFO.
+        level: ERROR
+        # -- Set the format of General Logs to be either Common Log Format or JSON. For more information: https://doc.traefik.io/traefik/observability/logs/#format
+        format: common
+      access:
+        enabled: true
+    defaultCertificate: cluster-cert  
     service:
       main:
         type: ClusterIP
