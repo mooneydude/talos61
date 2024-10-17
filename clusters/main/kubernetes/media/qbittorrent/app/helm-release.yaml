@@ -55,7 +55,7 @@ spec:
             enabled: true
             certificateIssuer: mb-wildcard
         hosts:
-          - host: torrent.${BASE_DOMAIN}
+          - host: torrent.${BASE_DOMAIN} # a note
             paths:
               - path: /
                 pathType: Prefix
