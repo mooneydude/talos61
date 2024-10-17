@@ -60,17 +60,17 @@ spec:
               - path: /
                 pathType: Prefix
     persistence:
-      config:
-        volsync:
-          - name: b2
-            type: restic
-            credentials: s3
-            dest:
-              enabled: true
-              cacheCapacity: 10Gi
-            src:
-              enabled: true
-              cacheCapacity: 10Gi
+      # config:
+      #   volsync:
+      #     - name: b2
+      #       type: restic
+      #       credentials: s3
+      #       dest:
+      #         enabled: true
+      #         cacheCapacity: 10Gi
+      #       src:
+      #         enabled: true
+      #         cacheCapacity: 10Gi
       downloads:
         enabled: true
         existingClaim: downloads-nfs-pvc
